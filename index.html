@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KMØD | Enter The Mode</title>
+
+<!-- FAVICON (ADD HERE 👇) -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+<div class="spotlight"></div>
+
+<!-- LOADER -->
+
+<div class="loader">
+
+    <h1 class="loader-logo">KMØD</h1>
+
+    <p>ENTER THE MODE</p>
+
+</div>
+
+<!-- CURSOR -->
+
+<div class="cursor"></div>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        KMØD
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <ul id="navMenu">
+
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#collection">COLLECTION</a></li>
+        <li><a href="#philosophy">PHILOSOPHY</a></li>
+        <li><a href="#community">COMMUNITY</a></li>
+        <li><a href="#newsletter">NEWSLETTER</a></li>
+
+    </ul>
+
+    <div class="nav-actions">
+
+        <a href="login.html">SIGN IN</a>
+
+        <a href="register.html">SIGN UP</a>
+
+        <a href="cart.html">
+            🛒 (<span id="cartCount">0</span>)
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <video
+        autoplay
+        muted
+        loop
+        class="hero-video">
+
+        <source
+            src="assets/Videos/hero.mp4"
+            type="video/mp4">
+
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            EST. 2026
+        </p>
+
+        <h1>
+
+            <span>EVOLVE.</span>
+            <span>ELEVATE.</span>
+            <span>INSPIRE.</span>
+
+        </h1>
+
+        <p class="hero-description">
+
+            Built Different.
+            Designed For Visionaries.
+            Created To Enter The Mode.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="shop.html" class="btn-primary">
+                ENTER THE MODE
+            </a>
+
+            <a href="#collection" class="btn-secondary">
+                VIEW COLLECTION
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURED -->
+
+<section id="collection" class="featured">
+
+    <div class="section-header">
+
+        <span>FEATURED DROP</span>
+
+        <h2>
+            <span>ASCEND SERIES</span>
+        </h2>
+
+    </div>
+
+    <div class="product-cards">
+
+        <article class="product-grid">
+
+            <a href="product.html">
+
+                <div class="product-image">
+
+                    <img
+                        src="assets/Images/Black.png"
+                        alt="Black Future T-Shirt">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Black Future T-Shirt</h3>
+
+                    <p>$129</p>
+
+                </div>
+
+            </a>
+
+        </article>
+
+        <article class="product-grid">
+
+            <a href="product.html">
+
+                <div class="product-image">
+
+                    <img
+                        src="assets/Images/Black-Purple.png"
+                        alt="Deep Future T-Shirt">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Deep Future T-Shirt</h3>
+
+                    <p>$189</p>
+
+                </div>
+
+            </a>
+
+        </article>
+
+        <article class="product-grid">
+
+            <a href="product.html">
+
+                <div class="product-image">
+
+                    <img
+                        src="assets/Images/Dark-Brown.png"
+                        alt="Lighter Future T-Shirt">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Lighter Future T-Shirt</h3>
+
+                    <p>$249</p>
+
+                </div>
+
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- PHILOSOPHY -->
+
+<section id="philosophy" class="philosophy">
+
+    <span>PHILOSOPHY</span>
+
+    <h2>
+
+        <span>MORE THAN</span>
+        <span>CLOTHING</span>
+
+    </h2>
+
+    <p>
+
+        KMØD exists to inspire vision,
+        discipline, identity and purpose.
+
+        Every collection is designed to elevate
+        the mindset before the outfit.
+
+    </p>
+
+</section>
+
+<!-- BRAND FILM -->
+
+<section class="brand-film">
+
+    <video
+        autoplay
+        muted
+        loop
+        class="film-video">
+
+        <source
+            src="assets/Videos/film.mp4"
+            type="video/mp4">
+
+    </video>
+
+    <div class="film-content">
+
+        <span>BRAND FILM</span>
+
+        <h2>
+
+            <span>FUTURE</span>
+            <span>IS A MODE</span>
+
+        </h2>
+
+        <button class="play-film">
+
+            PLAY FILM
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- COMMUNITY -->
+
+<section id="community" class="community">
+
+    <span>COMMUNITY</span>
+
+    <h2>
+        <span>#KMODVISION</span>
+    </h2>
+
+    <div class="community-grid">
+
+        <div class="community-card"></div>
+        <div class="community-card"></div>
+        <div class="community-card"></div>
+        <div class="community-card"></div>
+
+    </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section id="newsletter" class="newsletter">
+
+    <span>NEXT DROP</span>
+
+    <h2>
+        <span>STAY READY</span>
+    </h2>
+
+    <form>
+
+        <input
+            type="email"
+            placeholder="ENTER YOUR EMAIL">
+
+        <button type="submit">
+
+            JOIN
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        KMØD
+
+    </div>
+
+    <div class="footer-links">
+
+        <a href="shop.html">SHOP</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#philosophy">PHILOSOPHY</a>
+        <a href="#newsletter">NEWSLETTER</a>
+
+    </div>
+
+    <p>
+
+        © 2026 KMØD
+
+    </p>
+
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/loader.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script src="js/animations.js"></script>
+<script src="js/cart-counter.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
