@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .dashboard{
 
 min-height:100vh;
@@ -70,4 +71,78 @@ font-weight:700;
 
 cursor:pointer;
 
+=======
+.dashboard{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+padding:120px 30px;
+
+}
+
+.dashboard-card{
+
+max-width:700px;
+width:100%;
+
+background:#0d0d0d;
+
+padding:60px;
+
+border-radius:30px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,0.05);
+
+}
+
+.dashboard-card span{
+
+color:#6D8BFF;
+
+letter-spacing:4px;
+
+}
+
+.dashboard-card h1{
+
+font-size:3rem;
+
+margin:20px 0;
+
+}
+
+.dashboard-card p{
+
+color:#bdbdbd;
+
+margin-bottom:40px;
+
+line-height:1.8;
+
+}
+
+#logoutBtn{
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#6D8BFF;
+
+color:white;
+
+font-weight:700;
+
+cursor:pointer;
+
+>>>>>>> f1ffff6 (update)
 }

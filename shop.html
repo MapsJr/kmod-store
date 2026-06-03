@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,121 +15,50 @@
 <link rel="stylesheet" href="css/shop.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
-
 <nav>
-
     <div class="logo">
         KMØD
     </div>
-
     <div class="menu-toggle" id="menuToggle">
-
         <span></span>
         <span></span>
         <span></span>
-
     </div>
-
     <ul id="navMenu">
-
         <li><a href="index.html">HOME</a></li>
         <li><a href="shop.html">SHOP</a></li>
         <li><a href="journal.html">JOURNAL</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-
     </ul>
-
-    <div class="nav-actions">
-
+    <div class="nav-actions" id="authContainer">
         <a href="login.html">SIGN IN</a>
-
         <a href="register.html">SIGN UP</a>
-
-        <a href="cart.html">
-            🛒 (<span id="cartCount">0</span>)
-        </a>
-
+        <a href="cart.html">🛒 (<span id="cartCount">0</span>)</a>
     </div>
-
 </nav>
-
 <section class="shop-hero">
-
 <h1>ALL PRODUCTS</h1>
-
-<p>
-    ENTER THE MODE
-</p>
-
+<p>ENTER THE MODE</p>
 </section>
-
 <section class="shop-controls">
-
-<input
-type="text" id="searchInput" placeholder="Search Products">
-
+<input type="text" id="searchInput" placeholder="Search Products">
 <div class="filters">
-
-    <button
-    class="filter-btn active"
-    data-category="all">
-
-        ALL
-
-    </button>
-
-    <button
-    class="filter-btn"
-    data-category="tees">
-
-        TEES
-
-    </button>
-
-    <button
-    class="filter-btn"
-    data-category="hoodies">
-
-        HOODIES
-
-    </button>
-
-    <button
-    class="filter-btn"
-    data-category="jackets">
-
-        JACKETS
-
-    </button>
-
-    <button
-    class="filter-btn"
-    data-category="bottoms">
-
-        BOTTOMS
-
-    </button>
-
+    <button class="filter-btn active" data-category="all">ALL</button>
+    <button class="filter-btn" data-category="tees">TEES</button>
+    <button class="filter-btn" data-category="hoodies">HOODIES</button>
+    <button class="filter-btn" data-category="jackets">JACKETS</button>
+    <button class="filter-btn" data-category="bottoms">BOTTOMS</button>
 </div>
-
 </section>
-
 <section class="products">
-
-<div id="productsGrid">
-
-</div>
-
+<div id="productsGrid"></div>
 </section>
-
-<script src="js/shop.js"></script>
-<script src="js/cart-counter.js"></script>
-<script src="js/menu.js"></script>
-
+<script type="module" src="js/auth-ui.js"></script>
+<script type="module" src="js/shop.js"></script>
+<script type="module" src="js/cart-counter.js"></script>
+<script type="module" src="js/menu.js"></script>
 </body>
 </html>

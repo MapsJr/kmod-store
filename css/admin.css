@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .admin{
 
 padding-top:140px;
@@ -109,4 +110,117 @@ border-radius:50px;
 
 cursor:pointer;
 
+=======
+.admin{
+
+padding-top:140px;
+
+padding-left:50px;
+padding-right:50px;
+
+padding-bottom:100px;
+
+}
+
+.admin h1{
+
+font-size:3rem;
+
+margin-bottom:50px;
+
+}
+
+.order-card{
+
+background:#111;
+
+border-radius:20px;
+
+padding:30px;
+
+margin-bottom:25px;
+
+}
+
+.order-card h2{
+
+margin-bottom:15px;
+
+}
+
+.order-card p{
+
+margin-bottom:10px;
+
+}
+
+.order-items{
+
+margin-top:20px;
+
+padding-top:20px;
+
+border-top:1px solid rgba(255,255,255,0.1);
+
+}
+
+.order-item{
+
+margin-bottom:10px;
+
+}
+
+.status{
+
+padding:8px 15px;
+
+border-radius:50px;
+
+display:inline-block;
+
+margin-top:15px;
+
+}
+
+.pending{
+
+background:#ffb100;
+
+color:black;
+
+}
+
+.processing{
+
+background:#6D8BFF;
+
+}
+
+.shipped{
+
+background:#00c853;
+
+}
+
+.actions{
+
+margin-top:20px;
+
+display:flex;
+
+gap:10px;
+
+}
+
+.actions button{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+>>>>>>> f1ffff6 (update)
 }

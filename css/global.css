@@ -449,3 +449,464 @@ footer{
     }
 
 }
+/* =========================
+   KMØD GLOBAL SYSTEM
+========================= */
+
+:root{
+
+    --black:#050505;
+    --white:#ffffff;
+    --accent:#6D8BFF;
+    --grey:#888888;
+    --darkgrey:#121212;
+
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(109,139,255,0.05),
+        #050505 40%
+    );
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#000;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--accent);
+    border-radius:50px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    padding:0 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(5,5,5,0.95);
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    z-index:9999;
+
+}
+
+#authContainer{
+
+    min-width:180px;
+
+    justify-content:flex-end;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:900;
+
+    letter-spacing:8px;
+
+    cursor:pointer;
+
+}
+
+.logo:hover{
+
+    color:var(--accent);
+
+}
+
+/* =========================
+   DESKTOP MENU
+========================= */
+
+#navMenu{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+#navMenu a{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    transition:0.3s;
+
+}
+
+#navMenu a:hover{
+
+    color:var(--accent);
+
+}
+
+/* =========================
+   NAV ACTIONS
+========================= */
+
+.nav-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    visibility:hidden;
+
+}
+
+.nav-actions a{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+}
+
+.cart-link{
+
+    font-weight:700;
+
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.menu-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+}
+
+.menu-toggle span{
+
+    width:28px;
+
+    height:3px;
+
+    background:white;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:black;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.btn-secondary{
+
+    padding:18px 40px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:50px;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    padding:80px 40px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+}
+
+.footer-logo{
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-bottom:25px;
+
+}
+
+footer p{
+
+    color:#777;
+
+}
+
+/* =========================
+   CURSOR
+========================= */
+
+.cursor{
+
+    position:fixed;
+
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+    filter:blur(10px);
+
+    pointer-events:none;
+
+    z-index:99999;
+
+}
+
+/* =========================
+   SPOTLIGHT
+========================= */
+
+.spotlight{
+
+    position:fixed;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(109,139,255,0.18),
+        transparent 70%
+    );
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:0;
+
+}
+
+/* =========================
+   CONTENT LAYERS
+========================= */
+
+nav,
+section,
+footer{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+/* =========================
+   MOBILE + TABLET
+========================= */
+
+@media(max-width:900px){
+
+    nav{
+
+        padding:0 20px;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    #navMenu{
+
+        position:fixed;
+
+        top:80px;
+        right:-100%;
+
+        width:280px;
+
+        height:calc(100vh - 80px);
+
+        background:#0d0d0d;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:center;
+
+        padding-top:50px;
+
+        gap:30px;
+
+        transition:0.4s ease;
+
+    }
+
+    #navMenu.active{
+
+        right:0;
+
+    }
+
+    .nav-actions{
+
+        display:none;
+
+    }
+
+    .footer-links{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .cursor{
+
+        display:none;
+
+    }
+
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:480px){
+
+    .logo{
+
+        font-size:1.4rem;
+
+        letter-spacing:5px;
+
+    }
+
+    #navMenu{
+
+        width:100%;
+
+    }
+
+}

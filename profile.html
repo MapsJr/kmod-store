@@ -46,44 +46,79 @@
 
     </ul>
 
-    <div class="nav-actions">
+<div class="nav-actions" id="authContainer">
 
-        <a href="login.html">SIGN IN</a>
+    <a href="login.html">SIGN IN</a>
 
-        <a href="register.html">SIGN UP</a>
+    <a href="register.html">SIGN UP</a>
 
-        <a href="cart.html">
-            🛒 (<span id="cartCount">0</span>)
-        </a>
+    <a href="cart.html">
+        🛒 (<span id="cartCount">0</span>)
+    </a>
 
-    </div>
+</div>
 
 </nav>
 
-<section class="profile-page">
+<section class="profile-section">
 
-<div class="profile-card">
+    <div class="profile-header">
 
-<div class="profile-avatar">
+     <div class="profile-card">
+        <div class="avatar">
+            👤
+        </div>
 
-KM
+        <h1 id="profileName">
+            Not Logged In...
+        </h1>
 
-</div>
+        <p id="profileEmail"></p>
 
-<h1 id="profileName">
-Loading...
-</h1>
+    </div>
 
-<p id="profileEmail">
-Loading...
-</p>
+    <div class="dashboard-grid">
 
-</div>
+        <div class="dashboard-card">
+            <h2 id="totalOrders">0</h2>
+            <p>Total Orders</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2 id="totalSpent">$0</h2>
+            <p>Total Spent</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2 id="mostBought">None</h2>
+            <p>Most Bought Product</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2 id="memberSince">--</h2>
+            <p>Member Since</p>
+        </div>
+
+    </div>
+
+    <div class="recent-orders">
+
+        <h2>Recent Orders</h2>
+
+        <div id="recentOrders"></div>
+
+    </div>
+
+    <button id="logoutBtn">
+        LOGOUT
+    </button>
 
 </section>
 
+<script type="module" src="js/auth-ui.js"></script>
 <script type="module" src="js/profile.js"></script>
-<script src="js/menu.js"></script>
+<script type="module" src="js/cart-counter.js"></script>
+<script type="module" src="js/menu.js"></script>
 
 </body>
 </html>

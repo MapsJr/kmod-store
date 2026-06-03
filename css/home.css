@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =========================
    HERO
 ========================= */
@@ -520,4 +521,528 @@
         grid-template-columns:1fr;
     }
 
+=======
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:scale(1.08);
+    will-change:transform;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.85)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    max-width:1100px;
+    padding:20px;
+}
+
+.hero-small{
+    color:var(--accent);
+    letter-spacing:8px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:8rem;
+    line-height:0.9;
+    font-weight:900;
+}
+
+.hero h1 span{
+    display:block;
+}
+
+.hero-description{
+    margin-top:30px;
+    color:#d0d0d0;
+    font-size:1.2rem;
+    letter-spacing:2px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.hero-buttons{
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured{
+    padding:150px 100px;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.section-header span{
+    color:var(--accent);
+    letter-spacing:5px;
+}
+
+.section-header h2{
+    font-size:5rem;
+    margin-top:20px;
+}
+
+.section-header h2 span{
+    display:block;
+}
+
+.product-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+    gap:40px;
+
+}
+
+.product-grid{
+
+    background:#111;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    transition:all 0.4s ease;
+
+    will-change:transform;
+
+}
+
+.product-grid:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 0 20px rgba(109,139,255,0.12),
+    0 0 50px rgba(109,139,255,0.08);
+
+}
+
+.product-grid a{
+    display:block;
+}
+
+.product-image{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform 0.6s ease;
+
+}
+
+.product-grid:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.product-info{
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.product-info h3{
+
+    margin-bottom:10px;
+
+    letter-spacing:1px;
+
+}
+
+.product-info p{
+
+    color:var(--accent);
+
+}
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.philosophy{
+
+    padding:200px 100px;
+
+    text-align:center;
+
+}
+
+.philosophy span{
+
+    color:var(--accent);
+
+    letter-spacing:5px;
+
+}
+
+.philosophy h2{
+
+    margin-top:20px;
+
+    font-size:6rem;
+
+    font-weight:900;
+
+}
+
+.philosophy h2 span{
+
+    display:block;
+
+}
+
+.philosophy p{
+
+    max-width:800px;
+
+    margin:40px auto 0;
+
+    color:#bdbdbd;
+
+    line-height:2;
+
+    font-size:1.1rem;
+
+}
+
+/* =========================
+   FILM
+========================= */
+
+.brand-film{
+
+    position:relative;
+
+    height:80vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.film-video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.brand-film::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,0.55);
+
+}
+
+.film-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+}
+
+.film-content span{
+
+    color:var(--accent);
+
+}
+
+.film-content h2{
+
+    font-size:5rem;
+
+    margin:30px 0;
+
+}
+
+.film-content h2 span{
+
+    display:block;
+
+}
+
+.play-film{
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+/* =========================
+   COMMUNITY
+========================= */
+
+.community{
+
+    padding:150px 100px;
+
+}
+
+.community span{
+
+    color:var(--accent);
+
+}
+
+.community h2{
+
+    margin:20px 0 60px;
+
+    font-size:5rem;
+
+}
+
+.community-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.community-card{
+
+    height:350px;
+
+    background:#111;
+
+    border-radius:25px;
+
+    transition:0.4s ease;
+
+}
+
+.community-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter{
+
+    padding:180px 100px;
+
+    text-align:center;
+
+}
+
+.newsletter span{
+
+    color:var(--accent);
+
+}
+
+.newsletter h2{
+
+    font-size:5rem;
+
+    margin:20px 0 50px;
+
+}
+
+.newsletter h2 span{
+
+    display:block;
+
+}
+
+.newsletter form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter input{
+
+    width:400px;
+
+    max-width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#111;
+
+    color:white;
+
+}
+
+.newsletter button{
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:var(--accent);
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* =========================
+   TEXT REVEAL SUPPORT
+========================= */
+
+.hero h1,
+.section-header h2,
+.philosophy h2,
+.film-content h2,
+.community h2,
+.newsletter h2{
+    overflow:hidden;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .product-cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .featured,
+    .community,
+    .newsletter,
+    .philosophy{
+        padding:100px 30px;
+    }
+
+    .section-header h2,
+    .community h2,
+    .newsletter h2,
+    .philosophy h2,
+    .film-content h2{
+        font-size:3rem;
+    }
+
+    .product-cards{
+        grid-template-columns:1fr;
+    }
+
+    .community-grid{
+        grid-template-columns:1fr;
+    }
+
+>>>>>>> f1ffff6 (update)
 }
