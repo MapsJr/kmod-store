@@ -143,6 +143,12 @@ background:#000;
 
 }
 
+.color-btn.black{
+
+background:#29292900;
+
+}
+
 .color-btn.purple{
 
 background:#9200b7;
@@ -158,6 +164,24 @@ background:#775343;
 .color-btn.blue{
 
 background:#007bff;
+
+}
+
+.color-btn.red{
+
+background:#8a0404;
+
+}
+
+.color-btn.green{
+
+background:#52a900ea;
+
+}
+
+.color-btn.beige{
+
+background:#ffe8a9ea;
 
 }
 
