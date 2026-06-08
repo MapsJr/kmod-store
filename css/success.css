@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0b0b0b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* MAIN CARD */
+.success-container {
+    text-align: center;
+    background: rgba(91, 91, 91, 0.81);
+    padding: 50px 40px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 76, 255, 0.673);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 0.6s ease;
+}
+
+/* CHECK ICON */
+.success-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00ff88, #00c2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 25px rgba(0, 255, 150, 0.4);
+}
+
+/* TITLE */
+.success-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* TEXT */
+.success-container p {
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* ORDER ID BOX */
+.order-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #ddd;
+}
+
+/* BUTTON */
+.home-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #00ff88, #00c2ff);
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
+}
+
+.continue-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: transparent;
+    color: #00c2ff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #00c2ff;
+    transition: 0.3s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .success-container {
+        padding: 35px 20px;
+    }
+
+    .success-container h1 {
+        font-size: 22px;
+    }
+}

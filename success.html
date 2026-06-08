@@ -9,8 +9,8 @@ content="width=device-width, initial-scale=1.0">
 
 <title>Order Success</title>
 
-<link rel="stylesheet"
-href="css/global.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/success.css">
 
 <style>
 
@@ -60,23 +60,40 @@ border-radius:50px;
 
 <body>
 
-<div class="success">
+<section class="success-container">
 
-<h1>
-ORDER CONFIRMED
-</h1>
+    <div class="success-icon">✓</div>
 
-<p>
-Thank you for choosing KMØD.
-</p>
+    <div class="success-card">
 
-<a href="index.html">
+        <h1>
+            ORDER CONFIRMED
+        </h1>
 
-RETURN HOME
+        <p>
+            Thank you for your purchase.  
+            Your order has been successfully placed.
+       </p>
+<br>
+        <p class="success-subtitle">
+            Welcome to the future.
+        </p>
 
-</a>
+        <div id="orderInfo">
+
+        </div>
+
+        <a href="shop.html" class="continue-btn">
+            CONTINUE SHOPPING
+        </a>
+
+    </div>
 
 </div>
+
+</section>
+
+<script type="module" src="js/success.js"></script>
 
 </body>
 </html>

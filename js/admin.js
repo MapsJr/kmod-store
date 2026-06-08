@@ -1,6 +1,4 @@
-
-import { db }
-from "./firebase.js";
+import { db } from "./firebase.js";
 
 import {
     collection,
@@ -8,43 +6,45 @@ import {
 }
 from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
 
+const totalOrders =
+document.getElementById("totalOrders");
+
+const totalRevenue =
+document.getElementById("totalRevenue");
+
+const totalCustomers =
+document.getElementById("totalCustomers");
+
 const ordersContainer =
 document.getElementById("ordersContainer");
 
-async function loadOrders(){
+async function loadDashboard(){
 
-    const querySnapshot =
+    const snapshot =
     await getDocs(
         collection(db,"orders")
     );
 
-    ordersContainer.innerHTML = "";
+    let revenue = 0;
 
-    querySnapshot.forEach(doc => {
+    const customers =
+    new Set();
+
+    let ordersHTML = "";
+
+    snapshot.forEach(doc=>{
 
         const order =
         doc.data();
 
-        let itemsHTML = "";
+        revenue +=
+        order.total || 0;
 
-        order.items.forEach(item => {
+        customers.add(
+            order.userId
+        );
 
-            itemsHTML += `
-
-            <li>
-
-                ${item.name}
-                (${item.size})
-
-                x${item.quantity}
-
-            </li>
-
-            `;
-
-        });
-
-        ordersContainer.innerHTML += `
+        ordersHTML += `
 
         <div class="order-card">
 
@@ -53,30 +53,12 @@ async function loadOrders(){
             </h3>
 
             <p>
-                ${order.customer.email}
+                $${order.total}
             </p>
 
             <p>
-                ${order.customer.phone}
-            </p>
-
-            <p>
-                ${order.customer.address}
-            </p>
-
-            <p>
-                Status:
                 ${order.status}
             </p>
-
-            <ul>
-                ${itemsHTML}
-            </ul>
-
-            <strong>
-                Total:
-                $${order.total}
-            </strong>
 
         </div>
 
@@ -84,6 +66,17 @@ async function loadOrders(){
 
     });
 
+    totalOrders.textContent =
+    snapshot.size;
+
+    totalRevenue.textContent =
+    "$" + revenue;
+
+    totalCustomers.textContent =
+    customers.size;
+
+    ordersContainer.innerHTML =
+    ordersHTML || "No Orders Yet";
 }
 
-loadOrders();
+loadDashboard();
